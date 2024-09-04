@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    
+    /* Background image settings */
+    background-color: rgb(253, 253, 253);  /* Fallback color */
+    background-image: url(resources/IMG_0091.JPG);  /* Path to your image */
+    background-size: cover;               /* Makes sure the image covers the entire screen */
+    background-position: center;          /* Center the image */
+    background-repeat: no-repeat;         /* Ensure the image does not repeat */
+    background-attachment: fixed;         /* Keeps the background fixed while scrolling */
+    
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.3); /* Transparent white background */
+    border-radius: 15px;                  /* Rounded corners */
+    padding: 20px;                        /* Padding inside the container */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    backdrop-filter: blur(10px);          /* Apply the glassmorphic blur */
+    -webkit-backdrop-filter: blur(10px);  /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slight border */
+    max-width: 600px;                     /* Max width of the glass container */
+    margin: 100px auto;                   /* Center the glass container horizontally */
+    color: black;                         /* Text color inside the container */
+}
+
+h1 {
+color: rgb(0, 0, 0);
+transition: 0.3s ease-in-out;
+}
+h1:hover{
+    scale: 150%;
+    transform: translateY(-5px);
+}
+
+
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgb(19, 187, 103);
+}
+
+#tasks {
+    margin: 20px;
+    font-size: 18px;
+    color: black;
+}
+
+#tasks p{
+    color: rgb(0, 0, 0);
+}
